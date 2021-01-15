@@ -1,0 +1,125 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif ;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+
+}
+
+header #logo{
+    font-size: 1.6rem;
+}
+
+header #logo span{
+    color: #A14c09;
+}
+
+header nav a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    font-weight: 700;
+}
+
+header nav a:last-child{
+    color: white;
+    background: #A14c09;
+    padding: 10px 20px;
+    margin-left: 30px;
+}
+
+header nav a:hover{
+    opacity: 0.8;
+}
+
+main{
+    display: flex ;
+    flex-direction: row;
+    margin: 3rem auto 0;
+    height: 900px;
+
+    background: url(https://github.com/matias-moll/WebDevTutorials/blob/main/LandingPageTutorial/DevBurgers/images/wave.svg);
+    background-position: bottom;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+main section{
+    margin-top: 3rem;
+    margin-left: 10%;
+    width: 35%;
+}
+
+main section h1{
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1em;
+    margin-bottom :30px ;
+
+}
+
+main section h1 span{
+    color: #A14c09;
+    font-size: 3.7rem;
+}
+ 
+main section p{
+    line-height: 1.5em;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
+main section button{
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #A14c09;
+    padding: 16px 0px;
+    font-size: 1rem;
+    font-weight: 700 ;
+    width: 160px;
+    margin-top: 60px;
+    cursor: pointer;
+    box-shadow: 2px 2px 1px black;
+}
+
+main div img{
+    min-width: 40vw;
+    min-height: 500px ;
+    width: 100%;
+}
+
+main section button:hover{
+    opacity: 0.8;
+}
+
+main section button:active{
+    box-shadow: -2px 1px black,
+    2px 2px 1px gold;
+    opacity: 1;
+}
+
+@media(max-width: 800px){
+    header nav a:not(:last-child){
+        display: none;
+
+    }
+ #image-container{
+     display: none;
+ }
+ main section{
+     width: 80%;
+ }
+}
