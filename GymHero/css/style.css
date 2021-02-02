@@ -1,0 +1,265 @@
+/* Resets */
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-size: 10px;
+}
+body{
+    background-color: black
+}
+/* header */
+header{
+    height: 250px;
+}
+
+
+.portada{
+    height: 100%;
+    display: flex;
+}
+.portada img{
+    object-fit: cover;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: absolute;
+    top:5px;
+    font-size: 2.5rem;
+    left: 10px;
+    min-width: 100px;
+    position: fixed;
+    
+}
+.gym{
+   font-size: inherit;
+   width: 50%;
+}
+
+.hero{
+    color:rgb(149, 241, 255);
+    font-size: inherit;
+    left: 15px;
+    width: 50%;
+    position: relative;;
+}
+.menu{
+    position: fixed;
+    display: flex;
+    top: 5px;
+    right: 5px;
+    list-style-type: none;
+  
+}
+
+.menu li{
+    padding: 3px;
+    margin: 5px;
+}
+.menu li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.menu li a:hover{
+    color:rgb(149, 241, 255);
+    padding: 5px;
+}
+
+/* Services */
+
+#services{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+
+}
+.card img{
+
+    height: 250px;
+    width: 80vw;
+    object-fit: cover;
+    box-shadow: 1px 1px 20px 0px  rgb(149, 241, 255);
+
+
+}
+.card img:hover{
+   box-shadow: 2px 2px 20px 10px rgb(99, 150, 158);
+
+}
+    
+.card h3{
+    margin-top: 10px;
+    letter-spacing: 3px;
+    color:white;
+    font-size: 2rem;
+    width: 100%;
+    white-space: nowrap;
+
+}
+.card p{
+    margin-top:10px ;
+    color: white;
+    font-size: 1.4rem;
+    width: 150px;
+}
+
+.card .button{
+    background-color: rgb(255, 255, 255) ;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px #666;
+}
+
+.card .button {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+
+}
+
+.card .button:hover{
+    border: 1px solid rgb(149, 241, 255);
+}
+.card .button:active{
+     background-color: rgb(238, 234, 234);
+  box-shadow: 0px -10px #666,
+            0px 1px 10px #666;
+
+  transform: translateY(10px);
+    
+}
+
+/* About */
+
+#about{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 150px;
+
+}
+
+.about-name{
+    color:white
+}
+.about-img{
+    width: 50vw;
+    height: 30vw;
+    min-width: 250px;
+    min-height: 250px;
+    box-shadow: 1px 1px 40px 0px  rgb(149, 241, 255);
+    border-radius: 5px;
+    margin:0px 5% ;
+}
+
+.about-img:hover{
+   box-shadow: 1px 1px 40px 20px rgb(99, 150, 158);
+
+}
+
+.about-p{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    color: white;
+    font-size: 1.4rem;
+    align-items: center;
+}
+
+.about-p-item:first-child{
+    font-size: 2rem;
+}
+.about-p-item:first-child::first-letter{
+    color: rgb(149, 241, 255);
+}
+.about-p-item:first-child:hover{
+    font-size: 2.2rem;
+}
+
+
+
+/* Media Query */
+@media(max-width: 400px){
+    .menu{
+        flex-direction: column;
+    }
+    .gym{
+        display: flex;
+        flex-direction: column;
+    }
+
+.card h3{
+    font-size: 1.5rem;
+}
+}
+@media(min-width: 400px){
+    header{height: 300px;} .menu li a{  font-size: 1.1rem;}
+    }
+
+
+@media(min-width: 500px){
+    header {height: 350px;}.menu li a{font-size: 1.2rem;}
+
+
+  
+}
+@media(max-width:520px){
+    .menu li{
+    padding: 1px;
+    margin: 1px;
+    }
+
+      #about{
+        flex-direction: column;
+        align-items:center;
+        min-height: 500px;
+    }
+    .about-p-item{
+        font-size: 1.5rem;
+        margin-top: 25px
+    }
+    .card img{
+    width: 80vw;
+}
+}
+
+@media(max-width:520px){}
+
+@media(min-width: 600px){
+    header{height: 400px;}.menu li a{font-size: 1.3rem;}.about-p-item{font-size: 1.4rem;}
+}
+@media(min-width: 700px){
+    header{height: 450px;}.menu li a{font-size: 1.4rem;}
+}
+@media(min-width: 800px){
+    header {height: 500px;}.menu li a{font-size: 1.5rem;}.about-p-item{font-size: 1.4rem;}
+}
+@media(min-width: 900px){
+    header {height: 550px;}.menu li a{font-size: 1.6rem;}
+}
+@media(min-width: 1000px){
+    header{height: 600px;}.menu li a{font-size: 1.7rem;}.about-p-item{font-size: 1.6rem;}
+}
+@media(min-width: 1100px){
+    header {height: 650px;}.menu li a{font-size: 1.8rem;}
+}
+@media(min-width: 1200px){
+    header {height: 700px;}.menu li a{font-size: 1.9rem;}
+}
+@media(min-width: 1300px){
+    header {height: 750px;}.menu li a{font-size: 2rem;}
+}
