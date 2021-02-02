@@ -181,7 +181,7 @@ header{
 }
 
 .about-p-item:first-child{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 .about-p-item:first-child::first-letter{
     color: rgb(149, 241, 255);
