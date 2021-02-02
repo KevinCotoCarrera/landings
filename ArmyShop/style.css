@@ -104,6 +104,7 @@ main div img{
 
 main section button:hover{
     opacity: 0.8;
+    text-shadow: 1px 1px gold;
 }
 
 main section button:active{
