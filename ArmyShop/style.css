@@ -41,6 +41,7 @@ header nav a:last-child{
 
 header nav a:hover{
     opacity: 0.8;
+    tex-shadow: 1px 1px gold;
 }
 
 main{
