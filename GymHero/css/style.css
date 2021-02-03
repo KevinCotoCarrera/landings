@@ -87,9 +87,9 @@ header{
 
 }
 .card img{
-    height: 50vh;
+    /*height: 50vh;*/
     min-height: 250px;
-    width: 80vw;
+   /* width: 80vw;*/
     object-fit: cover;
     box-shadow: 1px 1px 20px 0px  rgb(149, 241, 255);
 
@@ -201,6 +201,16 @@ header{
         display: flex;
         flex-direction: column;
     }
+    .menu{
+    right: 0px;
+    }
+    .logo{
+    left:0px
+    }
+    
+    .hero{
+    left:3px;
+    }
 
 .card h3{
     font-size: 1.5rem;
@@ -227,13 +237,15 @@ header{
         flex-direction: column;
         align-items:center;
         min-height: 500px;
+        
     }
     .about-p-item{
         font-size: 1.5rem;
         margin-top: 25px
     }
     .card img{
-    width: 80vw;
+    /*width: 80vw;*/
+      width: 600px;
 }
 }
 
