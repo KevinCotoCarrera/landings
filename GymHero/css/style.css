@@ -196,6 +196,41 @@ header{
 
 /* Media Query */
 @media(max-width: 400px){
+    /*.menu{
+        flex-direction: column;
+    }
+    .gym{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu{
+    right: 0px;
+    }
+    .logo{
+    left:0px;
+    font-size: 2rem;
+    }
+    
+    .hero{
+    left:3px;
+    }*/
+
+.card h3{
+    font-size: 1.5rem;
+}
+}
+@media(min-width: 400px){
+    header{height: 300px;} .menu li a{  font-size: 1.1rem;}
+    }
+
+
+@media(min-width: 500px){
+    header {height: 350px;}.menu li a{font-size: 1.2rem;}
+
+
+  
+}
+@media(max-width:520px){
     .menu{
         flex-direction: column;
     }
@@ -214,23 +249,6 @@ header{
     .hero{
     left:3px;
     }
-
-.card h3{
-    font-size: 1.5rem;
-}
-}
-@media(min-width: 400px){
-    header{height: 300px;} .menu li a{  font-size: 1.1rem;}
-    }
-
-
-@media(min-width: 500px){
-    header {height: 350px;}.menu li a{font-size: 1.2rem;}
-
-
-  
-}
-@media(max-width:520px){
     .menu li{
     padding: 1px;
     margin: 1px;
