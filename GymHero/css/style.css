@@ -17,10 +17,11 @@ header{
 .portada{
     height: 100%;
     display: flex;
-    object-fit: cover;
+    object-fit:
 }
 .portada img{
-    /*object-fit: cover;*/
+    object-fit: cover;
+    width: 100%;
 }
 .logo{
     display: flex;
