@@ -17,9 +17,10 @@ header{
 .portada{
     height: 100%;
     display: flex;
+    object-fit: cover;
 }
 .portada img{
-    object-fit: cover;
+    /*object-fit: cover;*/
 }
 .logo{
     display: flex;
@@ -87,9 +88,9 @@ header{
 
 }
 .card img{
-    /*height: 50vh;*/
+    height: 50vh;
     min-height: 250px;
-   /* width: 80vw;*/
+    width: 80vw;
     object-fit: cover;
     box-shadow: 1px 1px 20px 0px  rgb(149, 241, 255);
 
@@ -245,8 +246,8 @@ header{
         margin-top: 25px
     }
     .card img{
-    /*width: 80vw;*/
-      width: 600px;
+    width: 80vw;
+      
 }
 }
 
