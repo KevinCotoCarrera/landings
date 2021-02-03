@@ -205,7 +205,8 @@ header{
     right: 0px;
     }
     .logo{
-    left:0px
+    left:0px;
+    font-size: 2rem;
     }
     
     .hero{
