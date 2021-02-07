@@ -282,7 +282,7 @@ p{
 }
 
 .contact-card{
-    color: var(--third-color);
+    
     width: 50vw;
     padding: 20px;
     display: flex;
@@ -293,6 +293,9 @@ p{
     margin-bottom: 15px;
 }
 
+.contact-card a{
+    color: var(--third-color);
+}
 
 .flexbox-container{
     display: flex;
