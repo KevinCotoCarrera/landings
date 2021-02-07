@@ -24,7 +24,7 @@
 html{
     box-sizing: border-box;
     font-family: var(--font);
-    font-size: 16px;
+    font-size: 80px;
     scroll-behavior: smooth;
 }
 
