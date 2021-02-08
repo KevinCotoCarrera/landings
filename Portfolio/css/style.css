@@ -101,7 +101,7 @@ p{
 .gray-scale:hover{
      box-shadow: 0px 5px 20px 5px var(--second-color);
      transition-duration: 1.2s;
-        transform: rotateZ(360deg);
+        transform: rotateZ(15deg);
    
 }
 
